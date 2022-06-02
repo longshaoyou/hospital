@@ -80,6 +80,7 @@ const onSubmit = async () => {
     store.commit("login", true);
     localStorage.setItem("isLogin", "true");
     localStorage.setItem("token", login.data.data.token);
+    store.dispatch("getMyinfo"); //获取个人信息
     router.push("/");
     isLoading.value = false;
     // console.log(login);
