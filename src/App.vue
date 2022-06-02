@@ -19,9 +19,9 @@ export default {
   setup() {
     let times = null, //定时器
       ws = null,
-      wsTime = 10;
+      wsTime = 10; //重连次数;
     const store = useStore(),
-      wsUrl = "ws://127.0.0.1:3087"; //重连次数;
+      wsUrl = "ws:///hospital.longjiaming.cn:3087";
     let wsHeart = {
       timeout: 3000, // 心跳延迟时间
       timeoutObj: null,
