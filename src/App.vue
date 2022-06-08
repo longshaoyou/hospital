@@ -21,7 +21,7 @@ export default {
       ws = null,
       wsTime = 10; //重连次数;
     const store = useStore(),
-      wsUrl = "wss:///hospital.longjiaming.cn/websocket";
+      wsUrl = "ws://localhost/websocket";
     let wsHeart = {
       timeout: 3000, // 心跳延迟时间
       timeoutObj: null,
