@@ -75,7 +75,7 @@ function CancelRegistration() {
     .then(() => {
       // on confirm
       axios.get("/cancelReserve").then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.data.code == 200) {
           location.reload();
         }
