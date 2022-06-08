@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Notify, Toast } from "vant";
 import router from "@/router";
-axios.defaults.baseURL = "https://hospital.longjiaming.cn/api";
+axios.defaults.baseURL = "/api";
 axios.defaults.headers.post["Content-Type"] = "application/json;charset=UTF-8";
 
 axios.interceptors.request.use((config) => {
